@@ -1,0 +1,118 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Search-container {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.Search-container input {
+font-size: 20px;
+}
+
+.Search-container button {
+  font-size: 18px;
+  }
+
+    /* Header */
+
+.Nav {
+  overflow: hidden;
+  padding: 30px 20px 30px 20px; /*Etre éloigné du bord de la page */
+  display: flex;
+  background-color:black;
+  height: auto;
+}
+
+.Logo {
+  height: 80px;
+  /* display: flex;
+  align-items: center; */
+  /* border-radius: 50px; */
+  /* margin-left: 20px; */
+  clip-path:ellipse(30% 50%);
+}
+
+.List {
+  text-align: center;
+  justify-content: flex-start;
+  /* padding: 20px; */
+  list-style-type: none; /*enlever les bullets points*/
+  /* background-color: #e9a4a4; */
+  display: flex;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  margin: auto;
+}
+
+.Nav li { /* Pour éloigner les mots les uns des autres, ce qui est de la mise en page des mots dans la box*/
+  text-align: center;
+  padding: 20px;
+  text-decoration: none; /*enlever le surlignage */
+  font-size: 20px;
+  /* background-color: #b46d6d; */
+  color: #ffffff;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+nav a:hover {
+  color: lightslategray;
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
+
+nav span:hover{
+  background-color: lightslategray;
+}
+
+
+@media (max-width: 600px) {
+  .List {
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    /* padding: 0px; */
+    list-style-type: none;
+    /* background-color: #ffffff; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    justify-content: space-around;
+    margin: auto;
+    flex-basis: 40%;
+  }
+
+  .List li { 
+    text-align: center;
+    /* padding: 1px; */
+    text-decoration: none; 
+    font-size: 17px;
+    /* background-color: #ffffff; */
+    color: #ffffff;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+  }
+}
+
+   /* Footer */
+
+   footer {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+
+ .footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
